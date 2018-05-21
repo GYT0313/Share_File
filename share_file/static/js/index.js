@@ -1,5 +1,8 @@
 /**
- *
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-03-07 15:05:12
+ * @version $Id$
  */
 
 /* ------------------------------------------------------------------ */
@@ -22,7 +25,7 @@ function handleFileSelect(e){
 
     var files = e.target.files;
     var output = [];
-    var maxSize = 5;
+    var maxSize = 10;
     var xhr = new XMLHttpRequest();
     
 	
@@ -122,6 +125,10 @@ $(window).resize(function() {
 $('body').vegas({
     overlay: '/static/img/overlay.png',
     slides: [
+        { src: '/static/img/bannerq7.jpg' },
+        { src: '/static/img/bannerq6.jpg' },
+        { src: '/static/img/bannerq5.jpg' },
+        { src: '/static/img/bannerq4.jpg' },
         { src: '/static/img/bannerq3.jpg' },
         { src: '/static/img/bannerq2.jpg' },
         { src: '/static/img/bannerq1.jpg' },

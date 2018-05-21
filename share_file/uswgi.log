@@ -1,0 +1,130 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Mon May 21 21:13:08 2018] ***
+compiled with version: 5.4.0 20160609 on 12 May 2018 04:13:08
+os: Linux-4.13.0-41-generic #46~16.04.1-Ubuntu SMP Thu May 3 10:06:43 UTC 2018
+nodename: ubuntu-gyt
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/python/Shiyanlou/Share_File/share_file
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py_django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/python/Shiyanlou/Share_File/share_file/
+your processes number limit is 15574
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.6.5 (default, Apr 23 2018, 13:50:05)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1944f20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1944f20 pid: 6732 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6732)
+spawned uWSGI worker 1 (pid: 6734, cores: 2)
+spawned uWSGI worker 2 (pid: 6735, cores: 2)
+spawned uWSGI worker 3 (pid: 6736, cores: 2)
+spawned uWSGI worker 4 (pid: 6737, cores: 2)
+[pid: 6736|app: 0|req: 1/1] 10.13.7.82 () {38 vars in 710 bytes} [Mon May 21 21:13:37 2018] GET / => generated 5276 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6735|app: 0|req: 1/2] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:13:44 2018] GET /search/?kw=.txt => generated 142 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 2/3] 10.13.7.82 () {42 vars in 999 bytes} [Mon May 21 21:13:55 2018] GET /search/?kw=%E5%BD%93%E5%89%8D%E9%99%90%E5%88%B6%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%E4%B8%8D%E8%B6%85%E8%BF%875MB => generated 2 bytes in 62 msecs (HTTP/1.1 200) 3 headers in 99 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 3/4] 10.13.7.82 () {38 vars in 710 bytes} [Mon May 21 21:14:45 2018] GET / => generated 5275 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6737|app: 0|req: 1/5] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:14:48 2018] GET /my/ => generated 5264 bytes in 112 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+/home/python/.virtualenvs/py_django/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Upload.Datatime received a naive datetime (2018-05-21 21:14:55.880622) while time zone support is active.
+  RuntimeWarning)
+[pid: 6737|app: 0|req: 2/6] 10.13.7.82 () {46 vars in 976 bytes} [Mon May 21 21:14:55 2018] POST / => generated 0 bytes in 73 msecs (HTTP/1.1 301) 4 headers in 145 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 3/7] 10.13.7.82 () {40 vars in 767 bytes} [Mon May 21 21:14:55 2018] GET /s/20897453 => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 4/8] 10.13.7.82 () {40 vars in 769 bytes} [Mon May 21 21:14:55 2018] GET /s/20897453/ => generated 6037 bytes in 61 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+/home/python/.virtualenvs/py_django/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Upload.Datatime received a naive datetime (2018-05-21 21:15:25.737178) while time zone support is active.
+  RuntimeWarning)
+[pid: 6736|app: 0|req: 5/9] 10.13.7.82 () {46 vars in 978 bytes} [Mon May 21 21:15:25 2018] POST / => generated 0 bytes in 20 msecs (HTTP/1.1 301) 4 headers in 145 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 6/10] 10.13.7.82 () {40 vars in 775 bytes} [Mon May 21 21:15:25 2018] GET /s/23496507 => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 2/11] 10.13.7.82 () {40 vars in 777 bytes} [Mon May 21 21:15:25 2018] GET /s/23496507/ => generated 6042 bytes in 167 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 3/12] 10.13.7.82 () {42 vars in 778 bytes} [Mon May 21 21:15:30 2018] GET /search/?kw=.txt => generated 305 bytes in 437 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6735|app: 0|req: 4/13] 10.13.7.82 () {40 vars in 777 bytes} [Mon May 21 21:34:33 2018] GET /s/23496507/ => generated 6042 bytes in 129 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 5/14] 10.13.7.82 () {42 vars in 778 bytes} [Mon May 21 21:34:52 2018] GET /search/?kw=.txt => generated 305 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 1/15] 10.13.7.82 () {40 vars in 777 bytes} [Mon May 21 21:35:37 2018] GET /s/23496507/ => generated 6042 bytes in 124 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 2/16] 10.13.7.82 () {40 vars in 777 bytes} [Mon May 21 21:36:45 2018] GET /s/23496507/ => generated 6048 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 4/17] 10.13.7.82 () {40 vars in 777 bytes} [Mon May 21 21:36:57 2018] GET /s/23496507/ => generated 6048 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 6/18] 10.13.7.82 () {40 vars in 777 bytes} [Mon May 21 21:37:42 2018] GET /s/23496507/ => generated 6044 bytes in 40 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 5/19] 10.13.7.82 () {40 vars in 761 bytes} [Mon May 21 21:37:45 2018] GET /my/ => generated 6819 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6735|app: 0|req: 7/20] 10.13.7.82 () {40 vars in 761 bytes} [Mon May 21 21:38:14 2018] GET /my/ => generated 6844 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 7/21] 10.13.7.82 () {40 vars in 761 bytes} [Mon May 21 21:39:00 2018] GET /my/ => generated 6844 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 6734|app: 0|req: 3/22] 10.13.7.82 () {36 vars in 542 bytes} [Mon May 21 21:39:03 2018] GET /favicon.ico => generated 2450 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 8/23] 10.13.7.82 () {40 vars in 761 bytes} [Mon May 21 21:39:04 2018] GET /my/ => generated 6844 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 6735|app: 0|req: 8/24] 10.13.7.82 () {36 vars in 542 bytes} [Mon May 21 21:39:13 2018] GET /favicon.ico => generated 2450 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6734|app: 0|req: 4/25] 10.13.7.82 () {40 vars in 761 bytes} [Mon May 21 21:39:19 2018] GET /my/ => generated 6844 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+/home/python/.virtualenvs/py_django/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Upload.Datatime received a naive datetime (2018-05-21 21:39:29.172397) while time zone support is active.
+  RuntimeWarning)
+[pid: 6737|app: 0|req: 6/26] 10.13.7.82 () {46 vars in 970 bytes} [Mon May 21 21:39:29 2018] POST / => generated 0 bytes in 50 msecs (HTTP/1.1 301) 4 headers in 145 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 7/27] 10.13.7.82 () {40 vars in 767 bytes} [Mon May 21 21:39:29 2018] GET /s/84236105 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 0)
+[pid: 6735|app: 0|req: 9/28] 10.13.7.82 () {40 vars in 769 bytes} [Mon May 21 21:39:29 2018] GET /s/84236105/ => generated 6051 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 5/29] 10.13.7.82 () {40 vars in 761 bytes} [Mon May 21 21:39:31 2018] GET /my/ => generated 7619 bytes in 37 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 9/30] 10.13.7.82 () {40 vars in 761 bytes} [Mon May 21 21:39:36 2018] GET /my/ => generated 7619 bytes in 62 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 6737|app: 0|req: 8/31] 10.13.7.82 () {36 vars in 542 bytes} [Mon May 21 21:39:40 2018] GET /favicon.ico => generated 2450 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 10/32] 10.13.7.82 () {38 vars in 710 bytes} [Mon May 21 21:39:47 2018] GET / => generated 5287 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 9/33] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:39:50 2018] GET /my/ => generated 7619 bytes in 74 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 6737|app: 0|req: 10/34] 10.13.7.82 () {36 vars in 542 bytes} [Mon May 21 21:39:56 2018] GET /favicon.ico => generated 2450 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 10/35] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:39:57 2018] GET /my/ => generated 7620 bytes in 500 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 6736|app: 0|req: 11/36] 10.13.7.82 () {36 vars in 542 bytes} [Mon May 21 21:39:58 2018] GET /favicon.ico => generated 2450 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 12/37] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:40:00 2018] GET /my/ => generated 7620 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6734|app: 0|req: 6/38] 10.13.7.73 () {38 vars in 638 bytes} [Mon May 21 21:40:16 2018] GET / => generated 5287 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+/home/python/.virtualenvs/py_django/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Upload.Datatime received a naive datetime (2018-05-21 21:40:27.172000) while time zone support is active.
+  RuntimeWarning)
+[pid: 6735|app: 0|req: 11/39] 10.13.7.73 () {50 vars in 1011 bytes} [Mon May 21 21:40:27 2018] POST / => generated 0 bytes in 18 msecs (HTTP/1.1 301) 4 headers in 145 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 7/40] 10.13.7.73 () {44 vars in 812 bytes} [Mon May 21 21:40:27 2018] GET /s/64897513 => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 0)
+[pid: 6735|app: 0|req: 12/41] 10.13.7.73 () {44 vars in 814 bytes} [Mon May 21 21:40:27 2018] GET /s/64897513/ => generated 6056 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 11/42] 10.13.7.73 () {42 vars in 723 bytes} [Mon May 21 21:40:33 2018] GET /search/?kw=.txt => generated 622 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6735|app: 0|req: 13/43] 10.13.7.73 () {44 vars in 814 bytes} [Mon May 21 21:40:59 2018] GET /s/64897513/ => generated 6056 bytes in 63 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 13/44] 10.13.7.73 () {42 vars in 778 bytes} [Mon May 21 21:41:05 2018] GET /my/ => generated 6056 bytes in 31 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 6737|app: 0|req: 12/45] 10.13.7.73 () {40 vars in 757 bytes} [Mon May 21 21:41:10 2018] GET /favicon.ico => generated 2450 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 14/46] 10.13.7.73 () {42 vars in 715 bytes} [Mon May 21 21:41:25 2018] GET /search/?kw=.txt => generated 622 bytes in 102 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 13/47] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:42:22 2018] GET /my/ => generated 7644 bytes in 37 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 8/48] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:42:32 2018] GET /my/ => generated 7645 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 15/49] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:42:52 2018] GET /my/ => generated 7668 bytes in 63 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6737|app: 0|req: 14/50] 10.13.7.82 () {38 vars in 710 bytes} [Mon May 21 21:42:59 2018] GET / => generated 5334 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 14/51] 10.13.7.73 () {42 vars in 770 bytes} [Mon May 21 21:43:05 2018] GET /my/ => generated 6103 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6734|app: 0|req: 9/52] 10.13.7.82 () {38 vars in 710 bytes} [Mon May 21 21:43:29 2018] GET / => generated 5335 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 10/53] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:44:17 2018] GET /search/?kw=.txt => generated 623 bytes in 415 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 15/54] 10.13.7.82 () {38 vars in 710 bytes} [Mon May 21 21:44:25 2018] GET / => generated 5335 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 16/55] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:44:29 2018] GET /search/?kw=.txt => generated 623 bytes in 313 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6734|app: 0|req: 11/56] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:29 2018] GET /search/?kw=.txt => generated 623 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 12/57] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:30 2018] GET /search/?kw=.txt => generated 624 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 17/58] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:31 2018] GET /search/?kw=.txt => generated 624 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 18/59] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:31 2018] GET /search/?kw=.txt => generated 624 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 16/60] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:32 2018] GET /search/?kw=.txt => generated 624 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 17/61] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:32 2018] GET /search/?kw=.txt => generated 624 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 13/62] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:32 2018] GET /search/?kw=.txt => generated 624 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 14/63] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:32 2018] GET /search/?kw=.txt => generated 624 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 19/64] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:33 2018] GET /search/?kw=.txt => generated 624 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6737|app: 0|req: 15/65] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:45:33 2018] GET /search/?kw=.txt => generated 624 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 20/66] 10.13.7.82 () {44 vars in 797 bytes} [Mon May 21 21:46:22 2018] GET /search/?kw=.txt => generated 624 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 18/67] 10.13.7.82 () {44 vars in 797 bytes} [Mon May 21 21:47:17 2018] GET /search/?kw=.txt => generated 624 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 21/68] 10.13.7.82 () {44 vars in 797 bytes} [Mon May 21 21:47:20 2018] GET /search/?kw=.txt => generated 624 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 15/69] 10.13.7.82 () {38 vars in 710 bytes} [Mon May 21 21:48:32 2018] GET / => generated 5335 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 16/70] 10.13.7.82 () {44 vars in 797 bytes} [Mon May 21 21:48:36 2018] GET /search/?kw=.txt => generated 624 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 16/71] 10.13.7.82 () {44 vars in 797 bytes} [Mon May 21 21:48:55 2018] GET /search/?kw=.txt => generated 624 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 19/72] 10.13.7.82 () {44 vars in 797 bytes} [Mon May 21 21:48:57 2018] GET /search/?kw=.txt => generated 624 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 17/73] 10.13.7.82 () {44 vars in 797 bytes} [Mon May 21 21:48:57 2018] GET /search/?kw=.txt => generated 624 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 6737|app: 0|req: 17/74] 10.13.7.82 () {40 vars in 740 bytes} [Mon May 21 21:49:26 2018] GET / => generated 5335 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 22/75] 10.13.7.82 () {44 vars in 797 bytes} [Mon May 21 21:49:33 2018] GET /search/?kw=.txt => generated 624 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 20/76] 10.13.7.82 () {42 vars in 767 bytes} [Mon May 21 21:50:08 2018] GET /search/?kw=.doc => generated 163 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 23/77] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:50:10 2018] GET /my/ => generated 7669 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6737|app: 0|req: 18/78] 10.13.7.82 () {42 vars in 770 bytes} [Mon May 21 21:50:15 2018] GET /search/?kw=.txt => generated 624 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 6737|app: 0|req: 19/79] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:50:41 2018] GET /my/ => generated 5324 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6734|app: 0|req: 18/80] 10.13.7.82 () {38 vars in 710 bytes} [Mon May 21 21:50:44 2018] GET / => generated 5335 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6734|app: 0|req: 19/81] 10.13.7.82 () {40 vars in 750 bytes} [Mon May 21 21:50:46 2018] GET /my/ => generated 5324 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 6736|app: 0|req: 24/82] 10.13.7.73 () {40 vars in 727 bytes} [Mon May 21 21:50:59 2018] GET / => generated 5335 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6736|app: 0|req: 25/83] 10.13.7.73 () {42 vars in 758 bytes} [Mon May 21 21:53:23 2018] GET / => generated 5336 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 6735|app: 0|req: 21/84] 10.13.7.73 () {42 vars in 758 bytes} [Mon May 21 21:55:52 2018] GET / => generated 5336 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
