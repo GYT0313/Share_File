@@ -2,10 +2,10 @@
 {% block content %}
     {% for i in content %}
                     <div class="file-content">
-                    <div class="file-name" style="width:25%;">&nbsp;&nbsp;{{ i.name }}</div>
+                    <div class="file-name" style="width:30%;">&nbsp;&nbsp;{{ i.name }}</div>
                     <div class="file-size" style="width:10%;">{{ i.Filesize }}B</div>
-					<div class="file-date" style="width:10%;">{{ i.DownloadDocount }}</div>
-                    <div class="file-date" style="width:20%;">{{ i.Datatime }}</div>
+					<div class="file-date" style="width:8%;">{{ i.DownloadDocount }}</div>
+                    <div class="file-date" style="width:17%;">{{ i.Datatime }}</div>
                     <div class="file-link" style="width:35%; padding-right: 80px; text-overflow: ellipsis; overflow: hidden;">
                         <span>
                             http://{{ i.PCIP }}/s/{{ i.code}}
