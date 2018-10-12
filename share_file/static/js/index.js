@@ -25,7 +25,7 @@ function handleFileSelect(e){
 
     var files = e.target.files;
     var output = [];
-    var maxSize = 10;
+    var maxSize = 50;
     var xhr = new XMLHttpRequest();
     
 	
@@ -239,10 +239,10 @@ $('.search-text-icon').click(function() {
 	    for(var i=0; i<Length; i++) {
 		var html = 
 		'<div class="file-content">' +
-                    '<div class="file-name" style="width:25%;">'+data[i].filename+'</div>' +
+                    '<div class="file-name" style="width:30%;">'+data[i].filename+'</div>' +
                     '<div class="file-size" style="width:10%;">'+data[i].size+'</div>' +
-                    '<div class="file-date" style="width:10%;">'+data[i].download+'</div>' +
-                    '<div class="file-date" style="width:20%;">'+data[i].time+'</div>' +
+                    '<div class="file-date" style="width:8%;">'+data[i].download+'</div>' +
+                    '<div class="file-date" style="width:17%;">'+data[i].time+'</div>' +
                     '<div class="file-link" style="width:35%; padding-right: 80px; text-overflow: ellipsis; overflow: hidden;">' +
                         '<span>' +
                             'http://'+data[i].ip+'/s/'+data[i].key+
